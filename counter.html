@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+</head>
+<style>
+    
+.a{
+    background-color: rgb(195, 197, 200);
+    height: 700px;
+    border: 0px solid;
+    display: block;
+    
+   
+
+}
+.b{
+    padding: 100px;
+    text-align: center;
+    font-size: 60px;
+    font-weight: bold;
+    color: rgb(8, 8, 66);
+    display: block;
+    
+    
+}
+.button{
+    background: transparent;
+    color: rgb(10, 10, 41);
+    border: 2px solid rgb(10, 28, 82);
+    font-size: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    cursor: pointer;
+    border-radius: 4px;
+    font-weight: bold;
+
+    
+}
+button:hover{
+
+border: 2px solid rgb(12, 49, 161);
+border-radius: 8px;
+}
+.button1{
+    margin-top: 60px;
+    text-align: center;
+  
+}
+
+#x{
+
+    font-size: 70px;
+    padding-left: 690px;
+    color: rgb(20, 39, 8);
+   
+}
+</style>
+<body>
+    <div class="a">
+<div class="ab">
+        <div class="b">Counter</div>
+        <span id="x" onclick="hide()"></span>
+    </div>
+<div class="button1">
+        <button class="button"  onclick="decrement()">DECREASE</button>
+        <button class="button" onclick="Reset()" >RESET</button>
+        <button class="button" onclick="increment()">INCREASE</button>
+
+    </div>
+
+
+    <script>
+var i = 1;
+
+function increment() {
+    document.getElementById('x').innerHTML = i;
+    i++;
+    
+    obj.cdisplay();
+    
+    return i;
+}
+
+
+function decrement() {
+    --i;
+    document.getElementById('x').innerHTML = i-1;
+    obj.cdisplay();
+    return i;
+}
+
+function Reset() {  
+    i;
+    document.getElementById('x').innerHTML = 0;
+    obj.cdisplay();
+    return i;
+   
+ } 
+
+
+    </script>
+
+
+</body>
+</html>
